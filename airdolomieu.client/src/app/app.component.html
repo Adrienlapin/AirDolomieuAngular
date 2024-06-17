@@ -1,0 +1,27 @@
+<h1 id="tableLabel">AIR DOLOMIEU</h1>
+
+<label for="avion-select">Select Avion : </label>
+<select #selectedavion>
+  <option>--Select--</option>
+  <option *ngFor="let Avion of avions" [value]="Avion.numavion">{{Avion.nomavion}}</option>
+</select>
+
+<label for="avion-select">Select Pilote : </label>
+<select #selectedpilote>
+  <option>--Select--</option>
+  <option *ngFor="let Pilote of pilotes" [value]="Pilote.numpilote">{{Pilote.nompilote}}</option>
+</select>
+
+<button class="" (click)="CheckVols()">Check Vols</button>
+
+<!-- The AG Grid component -->
+<ag-grid-angular class="ag-theme-alpine"
+                 style="height: 500px;"
+                 [rowData]="rowData$"
+                 [columnDefs]="colDefs">
+</ag-grid-angular>
+
+
+
+
+

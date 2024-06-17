@@ -1,0 +1,8 @@
+@AirDolomieu.Server_HostAddress = http://localhost:5297
+
+GET {{AirDolomieu.Server_HostAddress}}/weatherforecast/
+GET {{AirDolomieu.Server_HostAddress}}/Vols/GetAllVols
+GET {{AirDolomieu.Server_HostAddress}}/Vols/GetOneVol
+Accept: application/json
+
+###
